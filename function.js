@@ -14,7 +14,7 @@ function download(url, filename, i) {
 }
 
 // List all stickers of the pack, by restricting the scope on the modal
-let stickers = document.querySelectorAll(".modal-content .StickerButton img")
+let stickers = document.querySelectorAll(".popup-body .media-sticker-wrapper .media-sticker")
 for(let i = 0; i < stickers.length; i += 1){
 	download(
 		stickers[i].src,
